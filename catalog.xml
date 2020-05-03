@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/bookstore-soap-ws/CategoriesSOAP?wsdl" uri="src/conf/xml-resources/web-service-references/CategoriesSOAP/wsdl/localhost_8080/bookstore-soap-ws/CategoriesSOAP.wsdl"/>
+    <system systemId="http://localhost:8080/bookstore-soap-ws/CategoriesSOAP?xsd=1" uri="src/conf/xml-resources/web-service-references/CategoriesSOAP/wsdl/localhost_8080/bookstore-soap-ws/CategoriesSOAP.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/bookstore-soap-ws/BooksSOAP?wsdl" uri="src/conf/xml-resources/web-service-references/BooksSOAP/wsdl/localhost_8080/bookstore-soap-ws/BooksSOAP.wsdl"/>
+    <system systemId="http://localhost:8080/bookstore-soap-ws/BooksSOAP?xsd=1" uri="src/conf/xml-resources/web-service-references/BooksSOAP/wsdl/localhost_8080/bookstore-soap-ws/BooksSOAP.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/bookstore-soap-ws/CartsSOAP?wsdl" uri="src/conf/xml-resources/web-service-references/CartsSOAP/wsdl/localhost_8080/bookstore-soap-ws/CartsSOAP.wsdl"/>
+    <system systemId="http://localhost:8080/bookstore-soap-ws/CartsSOAP?xsd=1" uri="src/conf/xml-resources/web-service-references/CartsSOAP/wsdl/localhost_8080/bookstore-soap-ws/CartsSOAP.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/bookstore-soap-ws/UsersSOAP?wsdl" uri="src/conf/xml-resources/web-service-references/UsersSOAP/wsdl/localhost_8080/bookstore-soap-ws/UsersSOAP.wsdl"/>
+    <system systemId="http://localhost:8080/bookstore-soap-ws/UsersSOAP?xsd=1" uri="src/conf/xml-resources/web-service-references/UsersSOAP/wsdl/localhost_8080/bookstore-soap-ws/UsersSOAP.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/bookstore-soap-ws/Bookstore?wsdl" uri="src/conf/xml-resources/web-service-references/Bookstore/wsdl/localhost_8080/bookstore-soap-ws/Bookstore.wsdl"/>
+    <system systemId="http://localhost:8080/bookstore-soap-ws/Bookstore?xsd=1" uri="src/conf/xml-resources/web-service-references/Bookstore/wsdl/localhost_8080/bookstore-soap-ws/Bookstore.xsd_1.xsd"/>
+</catalog>
