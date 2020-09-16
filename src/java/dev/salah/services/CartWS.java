@@ -8,8 +8,8 @@ import java.util.List;
 
 public class CartWS {
 
-    private static Bookstore_Service service = new Bookstore_Service();
-    private static Bookstore client = service.getBookstorePort();
+    private static final Bookstore_Service service = new Bookstore_Service();
+    private static final Bookstore client = service.getBookstorePort();
 
     public static void create(Cart cart) {
         if (readByCart(cart.getUserId().getId(), cart.getBookId().getId()) == null) {
@@ -18,12 +18,14 @@ public class CartWS {
     }
 
     public static void create(User user, List<String> bookIDs) {
-        for (String id : bookIDs) {
+        bookIDs.stream().map(id -> {
             final Cart cart = new Cart();
             cart.setUserId(user);
             cart.setBookId(BookWS.read(id));
+            return cart;
+        }).forEachOrdered(cart -> {
             create(cart);
-        }
+        });
     }
 
     public static Cart readByCart(Integer uid, Integer bid) {

@@ -7,8 +7,8 @@ import java.util.List;
 
 public class CategoryWS {
 
-    private static Bookstore_Service service = new Bookstore_Service();
-    private static Bookstore client = service.getBookstorePort();
+    private static final Bookstore_Service service = new Bookstore_Service();
+    private static final Bookstore client = service.getBookstorePort();
 
     public static void create(Category category) {
         client.createCategory(category);
